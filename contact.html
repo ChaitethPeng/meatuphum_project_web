@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="km">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ទំនាក់ទំនង · Contact — Meatophum</title>
+  <meta name="description" content="Find Meatophum's two Phnom Penh branches, call us on 017 566 211, or book a table online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Moul&family=Kantumruy+Pro:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind.config.js"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="contact" class="bg-paper text-ink font-sans">
+  <div id="site-header"></div>
+
+  <section class="relative overflow-hidden bg-jungle-900 pt-44 pb-32 sm:pb-40">
+    <div class="absolute inset-0 bg-kbach"></div>
+    <img data-img="trei-kes" alt="" class="absolute inset-0 h-full w-full object-cover opacity-15">
+    <div class="absolute bottom-0 inset-x-0 text-jungle-950" data-angkor="w-full h-24 sm:h-36"></div>
+    <div class="relative mx-auto max-w-4xl px-4 text-center">
+      <nav aria-label="Breadcrumb" class="reveal flex justify-center gap-2 text-xs text-parchment/60">
+        <a href="index.html" class="hover:text-gold">Home</a><span>/</span><span class="text-gold">Contact</span>
+      </nav>
+      <h1 class="reveal mt-4 p-7 font-moul text-4xl sm:text-6xl text-gold-gradient">ទំនាក់ទំនង</h1>
+      <div class="reveal mt-5" data-ornament></div>
+      <p class="reveal mt-6 text-parchment/85 text-lg">We'd love to cook for you. Call, message or book a table below.</p>
+    </div>
+  </section>
+
+  <!-- QUICK CONTACT CARDS -->
+  <section class="relative -mt-14 z-10 mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="grid gap-4 sm:grid-cols-3">
+      <a href="tel:+85517566211" class="reveal group rounded-2xl bg-jungle-800 text-parchment border border-gold/30 p-6 shadow-card hover:-translate-y-1 transition">
+        <span class="grid h-11 w-11 place-items-center rounded-full bg-gold text-jungle-900">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg></span>
+        <h3 class="mt-4 font-khmer text-lg font-semibold text-gold-light">ទូរស័ព្ទ <span class="text-xs font-sans uppercase tracking-widest text-parchment/50">Call</span></h3>
+        <p class="text-xl font-semibold group-hover:text-gold transition">017 566 211</p>
+        <p class="text-xs text-parchment/60">+855 17 566 211</p>
+      </a>
+      <a href="https://www.facebook.com/meatophumcambodia/" target="_blank" rel="noopener" class="reveal group rounded-2xl bg-parchment-light border border-gold/30 p-6 shadow-card hover:-translate-y-1 transition">
+        <span class="grid h-11 w-11 place-items-center rounded-full bg-[#1877F2] text-white">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 00-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></span>
+        <h3 class="mt-4 font-khmer text-lg font-semibold">ហ្វេសប៊ុក <span class="text-xs font-sans uppercase tracking-widest text-ink/45">Facebook</span></h3>
+        <p class="text-jungle-900 font-semibold group-hover:text-clay transition">@meatophumcambodia</p>
+        <p class="text-xs text-ink/55">Message us for orders & events</p>
+      </a>
+      <div class="reveal rounded-2xl bg-parchment-light border border-gold/30 p-6 shadow-card">
+        <span class="grid h-11 w-11 place-items-center rounded-full bg-jungle-800 text-gold">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <h3 class="mt-4 font-khmer text-lg font-semibold">ម៉ោងបើក <span class="text-xs font-sans uppercase tracking-widest text-ink/45">Hours</span></h3>
+        <p class="font-display text-2xl text-clay">10:00 – 20:30</p>
+        <p id="openNow" class="mt-1 inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-semibold"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANCHES + MAP -->
+  <section id="branches" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 scroll-mt-28">
+    <div class="text-center">
+      <p class="reveal text-xs uppercase tracking-[.3em] text-clay">Find us</p>
+      <h2 class="reveal mt-2 font-moul text-3xl sm:text-4xl text-jungle-900">សាខារបស់យើង</h2>
+      <div class="reveal mt-4" data-ornament="text-gold-dark"></div>
+    </div>
+    <div class="mt-12 grid gap-6 lg:grid-cols-5">
+      <div id="branchList" class="lg:col-span-2 grid gap-4 content-start"></div>
+      <div class="reveal lg:col-span-3 overflow-hidden rounded-[2rem] border border-gold/30 shadow-card min-h-[380px] bg-parchment-dark">
+        <iframe id="branchMap" title="Map" class="w-full h-full min-h-[380px]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section id="reserve" class="mx-auto max-w-4xl px-4 sm:px-6 py-24 scroll-mt-28">
+    <div class="reveal frame-kbach rounded-[2rem] bg-parchment-light border border-gold/30 p-6 sm:p-10 shadow-card">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <div><h2 class="font-moul text-2xl sm:text-3xl text-jungle-900">កក់តុ</h2>
+        <p class="font-display text-xl italic text-ink/70">Book a table or send a message</p></div>
+        <span class="rounded-full bg-gold/20 px-3 py-1 text-xs text-gold-dark">We'll call to confirm</span>
+      </div>
+
+      <form id="contactForm" class="mt-8 grid gap-5 sm:grid-cols-2" novalidate>
+        <fieldset class="sm:col-span-2">
+          <legend class="text-sm font-medium"><span class="font-khmer">ជ្រើសសាខា</span> · Branch</legend>
+          <div id="branchPick" class="mt-2 grid sm:grid-cols-2 gap-3"></div>
+        </fieldset>
+        <label class="block">
+          <span class="text-sm font-medium"><span class="font-khmer">ឈ្មោះ</span> · Name *</span>
+          <input name="name" required autocomplete="name" class="field">
+          <span class="err hidden text-xs text-clay">Please enter your name · សូមបញ្ចូលឈ្មោះ</span>
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium"><span class="font-khmer">លេខទូរស័ព្ទ</span> · Phone *</span>
+          <input name="phone" type="tel" required autocomplete="tel" placeholder="0xx xxx xxx" class="field">
+          <span class="err hidden text-xs text-clay">Please enter a valid phone · សូមបញ្ចូលលេខទូរស័ព្ទ</span>
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium"><span class="font-khmer">កាលបរិច្ឆេទ</span> · Date</span>
+          <input name="date" type="date" class="field">
+        </label>
+        <div class="grid grid-cols-2 gap-3">
+          <label class="block">
+            <span class="text-sm font-medium"><span class="font-khmer">ម៉ោង</span> · Time</span>
+            <input name="time" type="time" min="10:00" max="20:00" class="field">
+          </label>
+          <div>
+            <span class="text-sm font-medium"><span class="font-khmer">ភ្ញៀវ</span> · Guests</span>
+            <div class="mt-1.5 flex items-center rounded-xl border border-gold/40 bg-white/70">
+              <button type="button" data-step="-1" class="h-12 w-10 text-xl text-gold-dark">−</button>
+              <input name="guests" value="2" readonly class="w-full bg-transparent text-center font-semibold outline-none">
+              <button type="button" data-step="1" class="h-12 w-10 text-xl text-gold-dark">+</button>
+            </div>
+          </div>
+        </div>
+        <label class="block sm:col-span-2">
+          <span class="text-sm font-medium"><span class="font-khmer">សារ</span> · Message</span>
+          <textarea name="message" rows="4" placeholder="Special requests, allergies, occasion…" class="field"></textarea>
+        </label>
+        <div class="sm:col-span-2 flex flex-col sm:flex-row sm:items-center gap-4">
+          <button class="inline-flex items-center justify-center gap-2 rounded-full bg-jungle-800 px-8 py-3.5 font-semibold text-gold hover:bg-jungle-700 transition shadow-card">
+            <span class="font-khmer">ផ្ញើ</span> · Send request</button>
+          <p class="text-xs text-ink/55">Prefer to talk? Call <a class="text-clay underline" href="tel:+85517566211">017 566 211</a></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mx-auto max-w-3xl px-4 sm:px-6 pb-24">
+    <div class="text-center">
+      <h2 class="reveal font-moul text-3xl text-jungle-900">សំណួរញឹកញាប់</h2>
+      <p class="reveal font-display text-xl italic text-ink/60">Frequently asked</p>
+      <div class="reveal mt-3" data-ornament="text-gold-dark"></div>
+    </div>
+    <div class="mt-10 space-y-3">
+      <details class="reveal group rounded-2xl border border-gold/30 bg-parchment-light p-5 open:shadow-card">
+        <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">Is prahok very strong for first-timers?<span class="text-gold-dark transition group-open:rotate-45 text-2xl leading-none">+</span></summary>
+        <p class="mt-3 text-sm text-ink/70">Try the Creamy Prahok with Pork or Grilled Prahok Kreoung first — cooking mellows the flavour.</p>
+      </details>
+      <details class="reveal group rounded-2xl border border-gold/30 bg-parchment-light p-5 open:shadow-card">
+        <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">How much does a meal cost?<span class="text-gold-dark transition group-open:rotate-45 text-2xl leading-none">+</span></summary>
+        <p class="mt-3 text-sm text-ink/70">Most dishes are around $2.5 (10,000–25,000៛). Desserts are 4,000៛.</p>
+      </details>
+      <details class="reveal group rounded-2xl border border-gold/30 bg-parchment-light p-5 open:shadow-card">
+        <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">Is there parking?<span class="text-gold-dark transition group-open:rotate-45 text-2xl leading-none">+</span></summary>
+        <p class="mt-3 text-sm text-ink/70">Parking is limited, especially at lunchtime. Coming by tuk-tuk or outside peak hours is easiest.</p>
+      </details>
+      <details class="reveal group rounded-2xl border border-gold/30 bg-parchment-light p-5 open:shadow-card">
+        <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">Do you take group bookings?<span class="text-gold-dark transition group-open:rotate-45 text-2xl leading-none">+</span></summary>
+        <p class="mt-3 text-sm text-ink/70">Yes — for 10+ guests please call or book a day ahead.</p>
+      </details>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="assets/site.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Branch cards + map switcher
+      const list = document.getElementById('branchList'), map = document.getElementById('branchMap');
+      const pick = document.getElementById('branchPick');
+      const selectBranch = id => {
+        const b = SITE.branches.find(x => x.id === id);
+        map.src = b.map;
+        list.querySelectorAll('[data-branch]').forEach(el => {
+          const on = el.dataset.branch === id;
+          el.classList.toggle('ring-2', on); el.classList.toggle('ring-gold', on); el.classList.toggle('bg-jungle-900', on);
+          el.classList.toggle('text-parchment', on); el.classList.toggle('bg-parchment-light', !on);
+        });
+      };
+      list.innerHTML = SITE.branches.map((b, i) => `
+        <div data-branch="${b.id}" class="reveal cursor-pointer rounded-3xl border border-gold/30 p-6 shadow-card transition">
+          <div class="flex items-start justify-between gap-3">
+            <div><p class="text-xs uppercase tracking-widest opacity-60">Branch ${i + 1}</p>
+            <h3 class="font-khmer text-xl font-semibold text-gold-dark">${b.km}</h3><p class="text-sm opacity-80">${b.en}</p></div>
+            <span class="grid h-10 w-10 place-items-center rounded-full bg-gold text-jungle-900">${svg('pin', 'w-5 h-5')}</span>
+          </div>
+          <p class="mt-3 text-sm opacity-80">${b.address}</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a href="${tel(b.phone)}" class="rounded-full bg-gold px-4 py-1.5 text-xs font-semibold text-jungle-900">Call</a>
+            <a href="${b.link}" target="_blank" rel="noopener" class="rounded-full border border-gold/60 px-4 py-1.5 text-xs font-semibold">Directions ↗</a>
+          </div>
+        </div>`).join('');
+      list.addEventListener('click', e => { if (e.target.closest('a')) return; const c = e.target.closest('[data-branch]'); if (c) selectBranch(c.dataset.branch); });
+      selectBranch(SITE.branches[0].id);
+
+      pick.innerHTML = SITE.branches.map((b, i) => `
+        <label class="cursor-pointer">
+          <input type="radio" name="branch" value="${b.en}" class="peer sr-only" ${i ? '' : 'checked'}>
+          <span class="flex items-center gap-3 rounded-xl border border-gold/40 bg-white/70 p-3 transition peer-checked:border-gold peer-checked:bg-gold/15 peer-checked:ring-2 peer-checked:ring-gold/40 peer-checked:[&_.dot]:scale-100">
+            <span class="grid h-5 w-5 place-items-center rounded-full border-2 border-gold-dark"><span class="dot h-2 w-2 scale-0 rounded-full bg-gold-dark transition"></span></span>
+            <span><span class="block font-khmer text-sm font-semibold">${b.km}</span><span class="block text-xs text-ink/55">${b.address}</span></span>
+          </span>
+        </label>`).join('');
+
+      // Open-now badge (Phnom Penh time)
+      const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Phnom_Penh' }));
+      const mins = now.getHours() * 60 + now.getMinutes(), open = mins >= 600 && mins < 1230;
+      const badge = document.getElementById('openNow');
+      badge.className += open ? ' bg-jungle-700/15 text-jungle-700' : ' bg-clay/15 text-clay';
+      badge.innerHTML = `<span class="h-2 w-2 rounded-full ${open ? 'bg-jungle-600' : 'bg-clay'}"></span>${open ? 'Open now · កំពុងបើក' : 'Closed now · បិទ'}`;
+
+      // Guest stepper
+      const g = document.querySelector('[name=guests]');
+      document.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => {
+        g.value = Math.min(30, Math.max(1, +g.value + +b.dataset.step));
+      }));
+
+      // Form validation + toast
+      const form = document.getElementById('contactForm');
+      const setErr = (el, bad) => {
+        el.classList.toggle('border-clay', bad); el.classList.toggle('ring-4', bad); el.classList.toggle('ring-clay/15', bad);
+        el.nextElementSibling.classList.toggle('hidden', !bad);
+      };
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const name = form.elements['name'], phone = form.elements['phone'];
+        const badName = !name.value.trim(), badPhone = !/^[+\d][\d\s-]{7,}$/.test(phone.value.trim());
+        setErr(name, badName); setErr(phone, badPhone);
+        if (badName || badPhone) return;
+        // TODO: send to a backend, Telegram bot or email service
+        toast(`<span class="font-khmer">អរគុណ!</span> Thanks ${name.value.replace(/[<>&]/g, '')} — we'll call you to confirm.`);
+        form.reset(); g.value = 2;
+      });
+    });
+  </script>
+</body>
+</html>

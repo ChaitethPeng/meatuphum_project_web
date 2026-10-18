@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="km">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title​ class="mt-4">មាតុភូមិ · Meatophum — Prahok & Kreoung Anlok, Phnom Penh</title​>
+  <meta name="description" content="Meatophum (មាតុភូមិ) — authentic Khmer prahok, kroeung vegetable dips, pounded salads and sour soups in Phnom Penh. Two branches, open daily.">
+  <meta property="og:title" content="មាតុភូមិ · Meatophum">
+  <meta property="og:image" content="assets/img/teuk-kreoung.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Moul&family=Kantumruy+Pro:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind.config.js"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="home" class="bg-paper text-ink font-sans">
+  <div id="site-header"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="relative overflow-hidden bg-jungle-900">
+    <div class="absolute inset-0 bg-kbach"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_40%,rgba(200,160,74,.25),transparent_60%)]"></div>
+    <div class="absolute bottom-0 inset-x-0 text-jungle-950" data-angkor="w-full h-28 sm:h-40 lg:h-52"></div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-40 pb-40 lg:pb-52 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="text-center lg:text-left">
+        <span class="reveal inline-flex items-center gap-2 rounded-full border border-gold/40 bg-jungle-950/50 px-4 py-1.5 text-xs text-gold-light">
+          <span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold opacity-75"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-gold"></span></span>
+          <span class="font-khmer">មរតកម្ហូបប្រពៃណីជាតិ</span> · Heritage of Khmer cuisine
+        </span>
+        <h1 class="reveal mt-6 font-moul text-6xl sm:text-7xl xl:text-8xl text-gold-gradient drop-shadow">មាតុភូមិ</h1>
+        <p class="reveal mt-1 font-khmer text-2xl sm:text-3xl text-parchment">ប្រហុក &amp; គ្រឿងអន្លក់</p>
+        <p class="reveal mx-auto lg:mx-0 mt-6 max-w-xl text-parchment/80 text-base sm:text-lg leading-relaxed">
+          Real Cambodian home cooking at everyday prices — kroeung pounded by hand, prahok made the traditional way, and baskets of fresh herbs from the countryside.
+        </p>
+        <div class="reveal mt-9 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <a href="#menu" class="group w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-3.5 font-semibold text-jungle-900 shadow-glow hover:bg-gold-light transition">
+            <span class="font-khmer">មើលម៉ឺនុយ</span> · View Menu
+            <svg class="w-4 h-4 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="contact.html#reserve" class="w-full sm:w-auto rounded-full border border-gold/60 px-8 py-3.5 font-semibold text-gold hover:bg-gold/10 transition text-center">
+            <span class="font-khmer">កក់តុ</span> · Reserve</a>
+        </div>
+        <div class="reveal mt-10 flex items-center justify-center lg:justify-start gap-4">
+          <div class="flex -space-x-3">
+            <img data-img="papaya" alt="" class="h-11 w-11 rounded-full object-cover ring-2 ring-jungle-900">
+            <img data-img="kokor" alt="" class="h-11 w-11 rounded-full object-cover ring-2 ring-jungle-900">
+            <img data-img="trei-kes" alt="" class="h-11 w-11 rounded-full object-cover ring-2 ring-jungle-900">
+            <span class="h-11 w-11 rounded-full bg-gold text-jungle-900 grid place-items-center text-xs font-bold ring-2 ring-jungle-900">30+</span>
+          </div>
+          <div class="text-left">
+            <div class="flex text-gold">★★★★<span class="text-gold/40">★</span></div>
+            <p class="text-xs text-parchment/70">4.0 on Google · 300+ reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo collage -->
+      <div class="reveal relative mx-auto w-full max-w-lg aspect-square">
+        <div class="absolute inset-[6%] rounded-full border border-gold/30"></div>
+        <div class="absolute inset-[14%] rounded-full border border-dashed border-gold/20 animate-[spin_60s_linear_infinite]"></div>
+        <button data-dish="teuk-kreoung" class="absolute inset-[16%] overflow-hidden rounded-full ring-8 ring-jungle-800 shadow-glow">
+          <img data-img="teuk-kreoung" alt="Battambang Teuk Kreoung" class="h-full w-full object-cover hover:scale-110 transition duration-700">
+        </button>
+        <button data-dish="duck-banana" class="float-a absolute left-0 top-[6%] w-[30%] aspect-square overflow-hidden rounded-3xl ring-4 ring-parchment-light shadow-card rotate-[-8deg]">
+          <img data-img="duck-banana" alt="Banana Tree with Spiced Duck" class="h-full w-full object-cover">
+        </button>
+        <button data-dish="papaya" class="float-b absolute right-0 bottom-[8%] w-[32%] aspect-square overflow-hidden rounded-3xl ring-4 ring-parchment-light shadow-card rotate-[7deg]">
+          <img data-img="papaya" alt="Papaya Salad" class="h-full w-full object-cover">
+        </button>
+        <div class="float-b absolute right-[2%] top-[10%] rounded-2xl bg-parchment-light/95 px-4 py-3 shadow-card text-left">
+          <p class="text-[10px] uppercase tracking-widest text-ink/50">Signature</p>
+          <p class="font-khmer font-semibold text-jungle-900">ទឹកគ្រឿងបាត់ដំបង</p>
+          <p class="text-sm font-bold text-clay">16,000៛</p>
+        </div>
+        <div class="float-a absolute left-[4%] bottom-[12%] flex items-center gap-2 rounded-2xl bg-jungle-950/90 border border-gold/30 px-4 py-3 shadow-card">
+          <span class="text-2xl">🌿</span><span class="text-left"><span class="block text-xs text-parchment/60">Most dishes</span><span class="block font-semibold text-gold-light">around $2.5</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="relative overflow-hidden border-y border-gold/30 bg-gold py-3 text-jungle-900">
+    <div class="marquee flex w-max gap-10 whitespace-nowrap font-khmer text-lg">
+      <span>ប្រហុកខ្ទិះ ✦</span><span>ទឹកគ្រឿងបាត់ដំបង ✦</span><span>បុកល្ហុង ✦</span><span>សម្លកកូរ ✦</span><span>ភ្លាសាច់គោ ✦</span><span>ត្រីងៀតឪឡឹក ✦</span><span>ផ្អកចៀន ✦</span><span>ម្ជូរគ្រឿង ✦</span><span>ញាំស្ដៅ ✦</span><span>កាពិបុក ✦</span>
+      <span aria-hidden="true">ប្រហុកខ្ទិះ ✦</span><span aria-hidden="true">ទឹកគ្រឿងបាត់ដំបង ✦</span><span aria-hidden="true">បុកល្ហុង ✦</span><span aria-hidden="true">សម្លកកូរ ✦</span><span aria-hidden="true">ភ្លាសាច់គោ ✦</span><span aria-hidden="true">ត្រីងៀតឪឡឹក ✦</span><span aria-hidden="true">ផ្អកចៀន ✦</span><span aria-hidden="true">ម្ជូរគ្រឿង ✦</span><span aria-hidden="true">ញាំស្ដៅ ✦</span><span aria-hidden="true">កាពិបុក ✦</span>
+    </div>
+  </div>
+
+  <!-- ===== STATS ===== -->
+  <section class="mx-auto max-w-6xl px-4 sm:px-6 py-16">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="reveal rounded-2xl bg-parchment-light border border-gold/30 p-6 text-center shadow-card">
+        <p class="font-display text-5xl text-clay"><span data-count="4" data-dec="1">0</span><span class="text-gold">★</span></p>
+        <p class="mt-1 text-sm text-ink/60">Google rating</p>
+      </div>
+      <div class="reveal rounded-2xl bg-jungle-800 border border-gold/30 p-6 text-center shadow-card text-parchment">
+        <p class="font-display text-5xl text-gold-light"><span data-count="300" data-suffix="+">0</span></p>
+        <p class="mt-1 text-sm text-parchment/60">Guest reviews</p>
+      </div>
+      <div class="reveal rounded-2xl bg-parchment-light border border-gold/30 p-6 text-center shadow-card">
+        <p class="font-display text-5xl text-clay"><span data-count="33">0</span></p>
+        <p class="mt-1 text-sm text-ink/60">Dishes on the menu</p>
+      </div>
+      <div class="reveal rounded-2xl bg-parchment-light border border-gold/30 p-6 text-center shadow-card">
+        <p class="font-display text-5xl text-clay"><span data-count="2">0</span></p>
+        <p class="mt-1 text-sm text-ink/60">Branches in Phnom Penh</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SIGNATURE BENTO ===== -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-24">
+    <div class="text-center">
+      <p class="reveal text-xs uppercase tracking-[.3em] text-clay">House favourites</p>
+      <h2 class="reveal mt-2 font-moul text-3xl sm:text-4xl text-jungle-900">មុខម្ហូបពិសេស</h2>
+      <div class="reveal mt-4" data-ornament="text-gold-dark"></div>
+    </div>
+    <div class="mt-12 grid gap-5 md:grid-cols-4 md:grid-rows-2 md:h-[620px]">
+      <button data-dish="teuk-kreoung" class="reveal group relative overflow-hidden rounded-3xl md:col-span-2 md:row-span-2 min-h-[360px] text-left">
+        <img data-img="teuk-kreoung" alt="" class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105">
+        <span class="absolute inset-0 bg-gradient-to-t from-jungle-950 via-jungle-950/30 to-transparent"></span>
+        <span class="absolute top-5 left-5 rounded-full bg-clay px-3 py-1 text-xs font-semibold text-parchment">♥♥ Most loved</span>
+        <span class="absolute bottom-0 p-7">
+          <span class="block font-khmer text-3xl font-bold text-gold-light">ទឹកគ្រឿងបាត់ដំបង</span>
+          <span class="block font-display text-2xl italic text-parchment">Battambang Teuk Kreoung</span>
+          <span class="mt-2 block max-w-md text-sm text-parchment/75">Lemongrass, galangal and prahok cooked into a fragrant dip, served with a basket of wild herbs and flowers.</span>
+          <span class="mt-4 inline-block rounded-full bg-gold px-4 py-1.5 font-bold text-jungle-900">16,000៛</span>
+        </span>
+      </button>
+      <button data-dish="phaak" class="reveal group relative overflow-hidden rounded-3xl md:col-span-2 min-h-[240px] text-left">
+        <img data-img="phaak" alt="" class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105">
+        <span class="absolute inset-0 bg-gradient-to-r from-jungle-950/90 via-jungle-950/40 to-transparent"></span>
+        <span class="absolute inset-y-0 left-0 flex flex-col justify-center p-7">
+          <span class="font-khmer text-2xl font-bold text-parchment">ផ្អកចៀន</span>
+          <span class="font-display text-xl italic text-gold-light">Fried Fermented Fish</span>
+          <span class="mt-3 w-fit rounded-full bg-parchment-light px-3 py-1 text-sm font-bold text-clay">12,000៛</span>
+        </span>
+      </button>
+      <button data-dish="duck-banana" class="reveal group relative overflow-hidden rounded-3xl min-h-[240px] text-left">
+        <img data-img="duck-banana" alt="" class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105">
+        <span class="absolute inset-0 bg-gradient-to-t from-clay-dark/95 to-transparent"></span>
+        <span class="absolute bottom-0 p-5"><span class="block font-khmer text-xl font-bold text-parchment">ទាដើមចេក</span><span class="text-sm text-gold-light">25,000៛</span></span>
+      </button>
+      <button data-dish="kokor" class="reveal group relative overflow-hidden rounded-3xl min-h-[240px] text-left">
+        <img data-img="kokor" alt="" class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105">
+        <span class="absolute inset-0 bg-gradient-to-t from-jungle-950/95 to-transparent"></span>
+        <span class="absolute bottom-0 p-5"><span class="block font-khmer text-xl font-bold text-parchment">សម្លកកូរ</span><span class="text-sm text-gold-light">16,000៛</span></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section id="menu" class="relative bg-parchment-dark/40 border-y border-gold/25 py-24 scroll-mt-28">
+    <div class="absolute inset-0 bg-kbach opacity-50"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p class="reveal text-xs uppercase tracking-[.3em] text-clay">Our Menu</p>
+        <h2 class="reveal mt-2 font-moul text-3xl sm:text-4xl text-jungle-900">ម៉ឺនុយម្ហូប</h2>
+        <div class="reveal mt-4" data-ornament="text-gold-dark"></div>
+      </div>
+
+      <!-- Toolbar -->
+      <div class="sticky top-[108px] z-30 mt-10 rounded-2xl border border-gold/30 bg-parchment-light/90 backdrop-blur p-3 sm:p-4 shadow-card">
+        <div class="flex flex-col md:flex-row md:items-center gap-3">
+          <label class="relative flex-1">
+            <span class="sr-only">Search dishes</span>
+            <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gold-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <input id="menu-search" type="search" placeholder="ស្វែងរកម្ហូប… Search e.g. prahok, mango, soup"
+              class="w-full rounded-full border border-gold/40 bg-white/80 py-3 pl-12 pr-4 outline-none focus:border-gold focus:ring-4 focus:ring-gold/20 font-khmer">
+          </label>
+          <div class="flex items-center justify-between md:justify-end gap-4">
+            <label class="inline-flex cursor-pointer items-center gap-3 select-none">
+              <input id="menu-fav" type="checkbox" class="peer sr-only">
+              <span class="relative h-7 w-12 rounded-full bg-jungle-900/20 transition peer-checked:bg-clay after:absolute after:left-1 after:top-1 after:h-5 after:w-5 after:rounded-full after:bg-white after:shadow after:transition peer-checked:after:translate-x-5"></span>
+              <span class="text-sm"><span class="text-clay">♥</span> Favourites only</span>
+            </label>
+            <span id="menu-count" class="rounded-full bg-jungle-900 px-3 py-1 text-xs font-semibold text-gold"></span>
+          </div>
+        </div>
+        <div id="menu-tabs" role="tablist" class="mt-3 flex gap-2 overflow-x-auto no-scrollbar lg:flex-wrap lg:justify-center"></div>
+      </div>
+
+      <div id="menu-grid" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+      <div id="menu-empty" class="hidden mt-10 rounded-3xl border-2 border-dashed border-gold/40 p-12 text-center">
+        <p class="text-4xl">🍲</p>
+        <p class="mt-3 font-khmer text-xl text-jungle-900">រកមិនឃើញម្ហូប</p>
+        <p class="text-ink/60">No dishes match your search.</p>
+        <button id="menu-reset" class="mt-5 rounded-full bg-jungle-800 px-6 py-2.5 text-sm font-semibold text-gold hover:bg-jungle-700">Clear filters</button>
+      </div>
+      <p class="mt-10 text-center text-sm text-ink/55">Prices in Khmer Riel (៛) as on our printed menu · <span class="text-clay">♥</span> = house favourite · Tap any dish for details.</p>
+    </div>
+  </section>
+
+  <!-- ===== HOW TO EAT ===== -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal relative order-2 lg:order-1">
+        <img data-img="mam-chhao" alt="Mam Chhao with vegetables" class="w-full aspect-[4/3] rounded-[2rem] object-cover shadow-card">
+        <div class="absolute -bottom-8 -right-2 sm:-right-8 w-1/2 rounded-[1.5rem] overflow-hidden ring-8 ring-parchment shadow-card">
+          <img data-img="kapi" alt="Kapi dip" class="w-full aspect-square object-cover">
+        </div>
+        <div class="absolute -top-5 left-6 rounded-2xl bg-jungle-900 px-5 py-3 text-parchment shadow-card">
+          <p class="font-moul text-gold-light">«ញ៉ាំបាយហើយឬនៅ?»</p><p class="text-xs italic text-parchment/70">“Have you eaten rice yet?”</p>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2">
+        <p class="reveal text-xs uppercase tracking-[.3em] text-clay">The Khmer way</p>
+        <h2 class="reveal mt-2 font-moul text-3xl text-jungle-900 leading-snug">របៀបញ៉ាំគ្រឿងអន្លក់</h2>
+        <p class="reveal mt-4 text-ink/70 leading-relaxed">Kreoung anlok is a shared-table ritual: one bold dip in the middle, a mountain of raw and blanched vegetables around it, and hot jasmine rice for everyone.</p>
+        <ol class="mt-8 relative border-l-2 border-dashed border-gold/50 ml-4 space-y-8">
+          <li class="reveal relative pl-8"><span class="absolute -left-[17px] top-0 grid h-8 w-8 place-items-center rounded-full bg-gold font-moul text-sm text-jungle-900">១</span><p class="font-semibold">Pick your dip</p><p class="text-sm text-ink/60">Prahok, kapi or teuk kreoung — mild to fearless.</p></li>
+          <li class="reveal relative pl-8"><span class="absolute -left-[17px] top-0 grid h-8 w-8 place-items-center rounded-full bg-gold font-moul text-sm text-jungle-900">២</span><p class="font-semibold">Grab the greens</p><p class="text-sm text-ink/60">Cucumber, long bean, eggplant, banana blossom, wild leaves.</p></li>
+          <li class="reveal relative pl-8"><span class="absolute -left-[17px] top-0 grid h-8 w-8 place-items-center rounded-full bg-gold font-moul text-sm text-jungle-900">៣</span><p class="font-semibold">Dip, scoop, repeat</p><p class="text-sm text-ink/60">Balance every bite with rice and a pounded salad.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="relative bg-jungle-900 py-24 overflow-hidden">
+    <div class="absolute inset-0 bg-kbach"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <div>
+          <p class="reveal text-xs uppercase tracking-[.3em] text-gold/80">Gallery</p>
+          <h2 class="reveal mt-2 font-moul text-3xl sm:text-4xl text-gold-gradient">រូបភាពម្ហូប</h2>
+        </div>
+        <a href="https://www.facebook.com/meatophumcambodia/" target="_blank" rel="noopener" class="reveal inline-flex w-fit items-center gap-2 rounded-full border border-gold/50 px-5 py-2.5 text-sm text-gold hover:bg-gold hover:text-jungle-900 transition">More on Facebook →</a>
+      </div>
+      <div id="gallery" data-items="beef-plea,neem,trei-ngiet,khor-mam,mango-smoked,sr-chicken,maju-prey,chhar-mam,tamarind,trei-kes"
+        class="mt-10 grid grid-cols-2 md:grid-cols-4 auto-rows-fr gap-3 sm:gap-4"></div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
+    <div class="grid lg:grid-cols-3 gap-8 items-start">
+      <div class="reveal">
+        <p class="text-xs uppercase tracking-[.3em] text-clay">What guests say</p>
+        <h2 class="mt-2 font-moul text-3xl text-jungle-900">មតិភ្ញៀវ</h2>
+        <div class="mt-6 rounded-3xl bg-jungle-900 p-7 text-parchment">
+          <p class="font-display text-6xl text-gold-light">4.0</p>
+          <div class="text-2xl text-gold">★★★★<span class="text-gold/30">★</span></div>
+          <p class="mt-2 text-sm text-parchment/70">Average from 300+ Google reviews</p>
+          <div class="mt-5 space-y-2 text-xs">
+            <div class="flex items-center gap-2"><span class="w-3">5</span><span class="h-2 flex-1 rounded-full bg-parchment/10"><span class="block h-2 w-[55%] rounded-full bg-gold"></span></span></div>
+            <div class="flex items-center gap-2"><span class="w-3">4</span><span class="h-2 flex-1 rounded-full bg-parchment/10"><span class="block h-2 w-[22%] rounded-full bg-gold"></span></span></div>
+            <div class="flex items-center gap-2"><span class="w-3">3</span><span class="h-2 flex-1 rounded-full bg-parchment/10"><span class="block h-2 w-[12%] rounded-full bg-gold"></span></span></div>
+            <div class="flex items-center gap-2"><span class="w-3">2</span><span class="h-2 flex-1 rounded-full bg-parchment/10"><span class="block h-2 w-[5%] rounded-full bg-gold"></span></span></div>
+            <div class="flex items-center gap-2"><span class="w-3">1</span><span class="h-2 flex-1 rounded-full bg-parchment/10"><span class="block h-2 w-[6%] rounded-full bg-gold"></span></span></div>
+          </div>
+          <p class="mt-3 text-[10px] text-parchment/40">Breakdown is illustrative — replace with your live numbers.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-2 grid sm:grid-cols-2 gap-5">
+        <figure class="reveal rounded-3xl bg-parchment-light border border-gold/30 p-7 shadow-card">
+          <div class="text-gold">★★★★★</div>
+          <blockquote class="mt-3 font-display text-2xl italic leading-snug text-jungle-900">“Many Cambodian yummy dishes here with affordable price and good service!”</blockquote>
+          <figcaption class="mt-4 text-sm text-ink/55">— Google reviewer</figcaption>
+        </figure>
+        <div class="reveal rounded-3xl bg-clay p-7 text-parchment shadow-card">
+          <p class="text-3xl">🧼</p><p class="mt-3 text-xl font-semibold">Spotlessly clean</p>
+          <p class="mt-2 text-sm text-parchment/80">Guests regularly mention how clean the dining room and kitchen are.</p>
+        </div>
+        <div class="reveal rounded-3xl bg-jungle-800 p-7 text-parchment shadow-card">
+          <p class="text-3xl">💵</p><p class="mt-3 text-xl font-semibold text-gold-light">Everyday prices</p>
+          <p class="mt-2 text-sm text-parchment/75">Most dishes cost around $2.5 — real Khmer food for the whole family.</p>
+        </div>
+        <div class="reveal rounded-3xl bg-parchment-light border border-gold/30 p-7 shadow-card">
+          <p class="text-3xl">⚡</p><p class="mt-3 text-xl font-semibold text-jungle-900">Quick, friendly service</p>
+          <p class="mt-2 text-sm text-ink/65">Tip from regulars: come outside peak hours for the fastest table.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BRANCHES PREVIEW ===== -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-24">
+    <div class="grid md:grid-cols-2 gap-5">
+      <a href="contact.html#branches" class="reveal group flex items-center gap-5 rounded-3xl border border-gold/30 bg-parchment-light p-6 shadow-card hover:shadow-glow transition">
+        <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-jungle-800 text-gold"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 1114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span class="flex-1"><span class="block font-khmer text-lg font-semibold text-jungle-900">សាខាផ្លូវ ១០០៣</span><span class="block text-sm text-ink/60">1-3, St. 1003, Phnom Penh</span></span>
+        <span class="text-gold-dark transition group-hover:translate-x-1">→</span>
+      </a>
+      <a href="contact.html#branches" class="reveal group flex items-center gap-5 rounded-3xl border border-gold/30 bg-parchment-light p-6 shadow-card hover:shadow-glow transition">
+        <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-clay text-parchment"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 1114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span class="flex-1"><span class="block font-khmer text-lg font-semibold text-jungle-900">សាខាមហាវិថីមិត្តភាព</span><span class="block text-sm text-ink/60">5 Phnom Penh–Hanoi Friendship Blvd</span></span>
+        <span class="text-gold-dark transition group-hover:translate-x-1">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="px-4 sm:px-6 pb-24">
+    <div class="reveal mx-auto max-w-6xl relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-clay to-clay-dark p-10 sm:p-16 text-center text-parchment">
+      <div class="absolute inset-0 bg-kbach opacity-60"></div>
+      <img data-img="teuk-kreoung" alt="" class="absolute -right-16 -bottom-16 hidden md:block w-72 h-72 rounded-full object-cover opacity-40">
+      <h2 class="relative font-moul text-3xl sm:text-4xl">សូមស្វាគមន៍មកកាន់មាតុភូមិ</h2>
+      <p class="relative mt-3 text-parchment/85">Bring the family — tables for groups of every size.</p>
+      <div class="relative mt-8 flex flex-col sm:flex-row justify-center gap-3">
+        <a href="contact.html#reserve" class="rounded-full bg-gold px-8 py-3.5 font-semibold text-jungle-900 hover:bg-gold-light transition">Book your table</a>
+        <a href="tel:+85517566211" class="rounded-full border border-parchment/50 px-8 py-3.5 font-semibold hover:bg-parchment/10 transition">Call 017 566 211</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="assets/site.js"></script>
+</body>
+</html>
